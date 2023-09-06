@@ -17,7 +17,7 @@ class RangeValidator {
         if (value <= this._to) {
             this._from = value;
         }   else {
-            throw new Error(`помилка! значення from (${value}) повинно бути меншим значення to (${this._to}).`);
+            throw new RangeError(`помилка! значення from (${value}) повинно бути меншим значення to (${this._to}).`);
         }
     }
 
